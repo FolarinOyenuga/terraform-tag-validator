@@ -1,10 +1,12 @@
-name: Validate PR Tags
+name: Validate PR Tags (Demo Only)
+
+# NOTE: This workflow demonstrates tag validation but won't block merges
+# In production repos, make this a required status check to enforce tagging
 
 on:
   pull_request:
     paths:
       - '**.tf'
-      - 'test-scenarios/**'
 
 permissions:
   contents: read
