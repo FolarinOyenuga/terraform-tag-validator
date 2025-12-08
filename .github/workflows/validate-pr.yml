@@ -74,7 +74,7 @@ jobs:
               commentBody += '- `is-production` ("true" or "false")\n';
               commentBody += '- `service-area` (any non-empty value)\n';
               commentBody += '- `environment-name` (production, staging, test, development)\n\n';
-              commentBody += '**Check the [workflow logs](${context.payload.repository.html_url}/actions/runs/${context.runId}) for detailed violation information.**\n';
+              commentBody += `**Check the [workflow logs](${context.payload.repository.html_url}/actions/runs/${context.runId}) for detailed violation information.**\n`;
             } else if (scenariosOutcome === 'skipped') {
               // SKIPPED - No Terraform files found
               commentBody += 'ℹ️ **No Terraform files to validate**\n\n';
