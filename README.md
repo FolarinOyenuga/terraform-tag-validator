@@ -29,7 +29,7 @@ Pre-deployment validation via GitHub Actions that:
 1. Docker container bundles Terraform + Python validation script
 2. Runs `terraform plan` on PR changes
 3. Parses plan JSON for taggable resources
-4. Validates against [MoJ tagging standards](https://ministryofjustice.github.io/technical-guidance/documentation/standards/documenting-infrastructure-owners.html)
+4. Validates against [MoJ tagging standards](https://cloud-optimisation-and-accountability.justice.gov.uk/documentation/finops-and-greenops-at-moj/standards/tagging.html)
 5. Returns exit code 1 if violations found (blocks PR merge)
 
 ## Usage
