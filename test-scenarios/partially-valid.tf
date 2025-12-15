@@ -35,7 +35,7 @@ resource "aws_dynamodb_table" "empty_values" {
   }
 
   tags = {
-    business-unit = ""  # Empty value
+    business-unit = "CICA"
     application   = "Data Table"
     owner         = "   "  # Whitespace only
     is-production = "false"
